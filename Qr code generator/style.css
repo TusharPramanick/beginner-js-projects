@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+body{
+    background-color: #262a2f;
+}
+
+.container{
+    width: 400px;
+    padding: 20px 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    background-color: #ffff;
+}
+
+#qrBox{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#qrBox img{
+    width: 100%;
+    padding: 10px;
+}
+
+#qrBox.show{
+    max-height: 300px;
+    border: 1px solid #262a2f;
+    margin: 10px auto;
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.container p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container input{
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: 2px solid #494eea;
+    margin-bottom: 20px;
+}
+
+.container button{
+    width: 100%;
+    box-shadow: 0 10px 10px #3439bc1e;
+    color: #ffff;
+    background-color: #494eea;
+    display: block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}

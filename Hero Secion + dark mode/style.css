@@ -1,18 +1,31 @@
+:root{
+    --primary-color: #f4f4f4;
+    --secondary-color: #212121;
+    --third-color: #ff4321;
+    --font-family: 'Poppins', sans-serif;
+}
+
+.dark-theme{
+    --primary-color: #212121;
+    --secondary-color: #dfdfdf;
+    --third-color: #ff4321;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family);
     font-size: 1rem;
-    color: #212121
+    color: var(--text-color);
 }
 
 body{
     width: 100%;
     height: 100vh;
     position: relative;
-    background: #dfdfdf;
-    color: rgb(32, 32, 32);
+    background: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 nav{
@@ -41,7 +54,7 @@ nav div a{
 }
 
 nav div a:hover{
-    color: #ff4321;
+    color: var(--third-color);
 }
 
 .info{
@@ -56,7 +69,7 @@ nav div a:hover{
 
 .info span{
     font-size: inherit;
-    color: #ff4321;
+    color: var(--third-color);
 }
 
 .info p{
@@ -67,8 +80,8 @@ nav div a:hover{
 
 .info button{
     padding: 10px 20px;
-    background-color: #212121;
-    color: #dfdfdf;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 5px;
     border: none;
     margin-top: 20px;
@@ -106,11 +119,11 @@ nav div a:hover{
 
 .social-links i{
     font-size: 30px;
-    color: #606163;
+    color: var(--secondary-color);
     margin-right: 20px;
 }
 
 
 .social-links i:hover{
-    color: #ff4321;
+    color: var(--third-color);
 }

@@ -1,0 +1,50 @@
+:root{
+    --background: #0b0423;
+    --primary: #e91e63;
+    --secondary: #ffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+body{
+    background-color: var(--background);
+}
+
+.mainBox{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.left-box, .right-box{
+    height: 400px;
+    width: 300px;
+    margin: 20px;
+    border: 2px dotted var(--secondary);
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    background-color: var(--primary);
+    margin: 30px;
+    height: 63px;
+    color: var(--secondary);
+    cursor: grab;
+}
+
+.list:active{
+    cursor: grabbing;
+}
+
+.list img{
+    margin: 0 20px;
+    width: 10px;
+}
